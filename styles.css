@@ -15,10 +15,11 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url(./images/pattern-background-desktop.svg);
-    background-size: cover;
-
+    background-size: contain;
     font-family: 'Red Hat Display', sans-serif;
-    color: var(--Desaturated-blue)
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+    color: var(--Desaturated-blue);
 }
 
 

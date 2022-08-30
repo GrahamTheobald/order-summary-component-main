@@ -1,0 +1,110 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 53%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+    --Border-radius: 2em;
+    --width: 26rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: cover;
+
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--Desaturated-blue)
+}
+
+
+.container {
+    width: var(--width);
+    max-width: var(--width);
+
+    background-color: white;
+    border-radius: 2em;
+}
+
+.img-container, .img-container > img {
+    border-radius: 2em 2em 0 0;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 27rem;
+    padding: 3em;
+}
+
+.title {
+    font-size: 1.7rem;
+}
+
+.description {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    padding: 1.3em;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.pricing-left {
+    display: flex;
+    gap: 1rem;
+}
+
+.pricing-left > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.payment {
+    background-color: var(--Bright-blue);
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-radius: 1em;
+    box-shadow: 0px 10px 10px hsl(245, 75%, 82%);;
+}
+
+.payment:hover {
+    background-color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+.cancel:hover {
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
+.bold {
+    font-weight: 800;
+}
+
+.dark {
+color: var(--Dark-blue);
+}
+
+.link {
+    color: var(--Bright-blue);
+    text-decoration: underline;
+}
+.link:hover {
+    color: var(--Desaturated-blue);
+    cursor: pointer;
+}
